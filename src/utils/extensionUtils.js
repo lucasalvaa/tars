@@ -17,23 +17,6 @@ function normalizeOutputStructure(outputStructure) {
     return [];
 }
 
-
-/**
- * Calculates the maximum line length within a given range of lines in the document.
- *
- * @param {vscode.TextDocument} document - The current VSCode document.
- * @param {number} startLine - Starting line number (inclusive).
- * @param {number} endLine - Ending line number (inclusive).
- * @returns {number} - The maximum number of characters found on a single line.
- */
-function getMaxLineLength(document, startLine, endLine) {
-    let maxLength = 0;
-    for (let line = startLine; line <= endLine; line++) {
-        maxLength = Math.max(maxLength, document.lineAt(line).text.length);
-    }
-    return maxLength;
-}
-
 /**
  * Creates a VSCode decoration type to visually display explanations alongside code.
  *
@@ -223,9 +206,6 @@ let decoratedIndexes = []
 
 module.exports = {
     normalizeOutputStructure,
-    getMaxLineLength,
-    createDecorationType,
     decorateExplanation,
-    extensionState,
-    decoratedIndexes
+    extensionState
 };

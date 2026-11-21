@@ -1,9 +1,9 @@
 const { ChatOllama } = require("@langchain/ollama");
-const { ChatOpenAI } = require("@langchain/OpenAI");
+const { ChatOpenAI } = require("@langchain/openai");
 const { logger } = require("../utils/logger");
 const { LLMType } = require("./agentState");
 const vscode = require('vscode');
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 
 const LLMFactory = {
     createLLM: async function (llmType, modelName, apiKey) {

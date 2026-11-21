@@ -8,7 +8,7 @@ const { agentState } = require("./agentState.js")
 const { logger } = require("../utils/logger")
 const vscode = require('vscode');
 const { z } = require('zod')
-const { ChatOpenAI } = require("@langchain/OpenAI");
+const { ChatOpenAI } = require("@langchain/openai");
 
 async function planner(state) {
     const schema = z.object({

@@ -204,10 +204,10 @@ async function saveAnswer(context, answer, question) {
 /**
  * Funzione per recuperare le risposte salvate
  * @param {vscode.ExtensionContext} context
- */
 function getSavedAnswers(context) {
   return context.globalState.get("userMind") || {};
 }
+*/
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -243,7 +243,7 @@ function showUserMentalState(context) {
 
 module.exports = {
 	runTomQuiz,
-	getSavedAnswers,
+	// getSavedAnswers,
 	flushUserMind,
 	showUserMentalState
 };

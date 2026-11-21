@@ -315,6 +315,5 @@ function extractAllFunctionsFromClass(symbol) {
 
 module.exports = {
 	findConstructs,
-	extractImportedConstructs,
-	extractAllFunctionsFromClass
+	extractImportedConstructs
 }

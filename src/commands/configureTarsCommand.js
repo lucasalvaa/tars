@@ -157,10 +157,11 @@ function viewPanel() {
 
 /**
  * Recupera config salvata
- */
+
 function getSavedConfig(context) {
     return context.globalState.get("tarsConfiguration") || null;
 }
+     */
 
 /**
  * Flush config
@@ -193,6 +194,5 @@ function showConfig(context) {
 module.exports = {
     configureTars,
     flushConfiguration,
-    showConfig,
-    getSavedConfig
+    showConfig
 };
