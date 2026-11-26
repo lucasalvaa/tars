@@ -94,12 +94,6 @@ function cleanLLMAnswer(LLMAnswer, programmingLanguage = "") {
     return responseString
 }
 
-function formatTemplate(template, values) {
-    return template.replace(/\{(\w+)\}/g, (match, key) => {
-        return key in values ? values[key] : match;
-    });
-}
-
 function extractUsedConstructs(inputCode, importedConstructs) {
     const usedCodes = [];
 
@@ -118,7 +112,6 @@ module.exports = {
     CRITIQUE_SYSTEM_PROMPT,
     doubleBraces: escapeCurlyBraces,
     cleanLLMAnswer,
-    formatTemplate,
     extractUsedConstructs
 }
 

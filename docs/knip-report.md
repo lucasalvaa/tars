@@ -52,4 +52,3 @@
 | getMaxLineLength             | src/utils/extensionUtils.js:226:5          | error    |
 | createDecorationType         | src/utils/extensionUtils.js:227:5          | error    |
 | decoratedIndexes             | src/utils/extensionUtils.js:230:5          | error    |
-

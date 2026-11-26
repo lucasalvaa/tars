@@ -156,14 +156,6 @@ function viewPanel() {
 }
 
 /**
- * Recupera config salvata
-
-function getSavedConfig(context) {
-    return context.globalState.get("tarsConfiguration") || null;
-}
-     */
-
-/**
  * Flush config
  */
 async function flushConfiguration(context) {

@@ -1,7 +1,5 @@
 const vscode = require('vscode');
-const {
-    extensionState
-} = require('../utils/extensionUtils');
+const { extensionState } = require('../utils/extensionUtils');
 
 
 function toggleDecorations(context) {
